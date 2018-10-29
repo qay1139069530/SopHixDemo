@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qbase.sophixdemo">
+
+
+    <!--&#45;&#45; 网络权限 &ndash;&gt;-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 外部存储读权限，调试工具加载本地补丁需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".SophixStubApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.IDSECRET"-->
+            <!--android:value="App ID" />-->
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.APPSECRET"-->
+            <!--android:value="App Secret" />-->
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.RSASECRET"-->
+            <!--android:value="RSA密钥" />-->
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="25254405-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="0bfe9b9692139e477cdc14ed446019f5" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWGDBA4XBHsqM9oung9jvuy0WJBNB/MGmXB3VZuN+YkTXVD/IiFzQuLqbO34kPms6m2PZJfDJoi99MXgCJKmxbYoLFMAp5Ci3j8EoIyBW/OFo6k077A7JjXWvnqm1NhFQCUePGWKgsBmHMo+F1dO498OP4ooHxNjkU91J1oM8X5d3pHyByIAhTANnkLsSvuaHDmrCggXVqCv9lIC7MzMnfEMm0jnYqNFH6c8LUHw2qlRMIzIJex2Ckz5w8m8ndtzoNhXdz+si7mfLdgldD+pCkUH1DhXJQlvPqSz5eCblskCaisZ+yK+fL638rHFtynSVJfVBX5oMaYwQO0CXdGJT/AgMBAAECggEAIVdSMLdjV6no9SIhTeWkvpDM63j0T6yTaAcyHDIjCSMIkEGwib4Zy0B1sXKaYasDyLBdVUmPcQXRHoerGs0fsNUbM25OhUCrnPydlYHMwuNjt6tNWhkiIUx5Ucbb7OI+Px2tuTusb8sjInAs/whwe7XtDigbMVfYKj4eRR7poecHMtPSGwCE+juHz3CG08IrjfmHk9hoa/N1avNHLle4ZuMzSt6fL3ic6DdapLldJHxNex4LJY/yAA1T8xjEKF56Amu2iKFPAUlKMUzNf4PVr4s7cUdKyN6XRGG6pQWFJ1MeDZxWq7y/P7uO9zRPPyKHiy0t+jcV9cn8PA0xEjZnEQKBgQDuqbfgcy7pyuBT7KWC8/HCSTAdP7RwoGAl+ZWF2X8j88RxfXc6pXTmVwPJOdJ/Q9OK3uZkV2VyInXX5njXJskkFxAwf8c/sigrZtsPBYcoH9Dn7ZnXCr3Zhemch5wrRokUHOSVW3qxUIYk7voKR0GtN0POd4jTcOUMv7Elb+bFmwKBgQCg/2lqAlejor3WIv/8ILM9jfOaxlX/9pTGGtClMaSuEVvZ63E7D0jbW53JNTinDtdxdEqFpUZvyvziQiXGWH0CN33gf6bc8PYPug5iuJtXA5XdEqC6rTABQ4zxctMWRoUGn1zGG7AR7qr55EsAHPERoIsmqC5qQccVV+NwjtN2bQKBgQDj1/cJOi1hWSNMO7HPEOCOoJxkb/rtQs5HsrxCal9sjT3PMv5uaKLve8bLhn4krTX5b873oE/i5G8oTIi0rfx8jeAQzQwFDSo4NRuQfbCIZ8dig3zIxSJ11dgubXB0CAS5xNOcmxbIzJ0kCVmAEoLqwMXlCE0BvteMkjymBuyDXQKBgGyplrNnG1GlgK1r+Axq4a81BOs83ESjX+yJorMsW3Lk4nKl10m+WjU7k7Z/BlqyyLSZgcbMM0s23RG1BZvmk5EQdRQ19CCBPgKFWDpHUQkcsWSBsxvr0k+4EQPRtSj+tcAvhUVs4Jxp0tpQvFI6NnboPaL8tj8fYEhGhoqsy4rNAoGAVpdw8ftd+y9zQcm4uEib3zDvGrfwznMvEDZk5fpzI5cQSgzMcfxW+sx96eZDlCT4nkdDSa9M8ylEHFe1NFT70CPV66KFObySginWx96T0fvGMFaWD/A8/tq+FvdGXN1qKuWpBBYbjTYdTJt/5fqzfaf1IsGIb9T9C4aFkQ9XF7g=" />
+
+
+
+
+        <activity android:name=".MainAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
